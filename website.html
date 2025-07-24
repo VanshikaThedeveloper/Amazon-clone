@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon clone</title>
+    <link href="stylesheet.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="location">
+            <h4>Hello</h4>
+            <i class="fa-solid fa-location-dot"></i>Select your location
+        </div>
+        <div class="search">
+            <div class="search1">
+                <select>
+                    <option>All</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Amritsar</option>
+                    <option>DElhi</option>
+                    <option>Bihar</option>
+                    <option>Chattisgarh</option>
+                    <option>Benguluru</option>
+                    <option>Dehradun</option>
+                    <option>Rishikesh</option>
+                    <option>Mumbai</option>
+                    <option>Tamil Nadu</option>
+                    <option>Kerela</option>
+                </select>
+            </div>
+            <div class="search2">
+                <input type="text" name="search" placeholder="Search Here...........">
+            </div>
+            <div class="search3"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="lang">
+            <div class="lang1"><img width="48" height="48" src="https://img.icons8.com/color/48/india.png" alt="india"/></div>
+            <div class="lang2">
+                <select>
+                    <option>Eng</option>
+                    <option>Hindi</option>
+                    <option>Punjabi</option>
+                    <option>Marathi</option>
+                    <option>Bengali</option>
+                    <option>Urdu</option>
+                    <option>Bojpuri</option>
+                </select>
+            </div>
+        </div>
+        <div class="signin"><a href="#" target="_parent">Sign in</a><h3>Account & lists</h3></div>
+        <div class="order"> Returns<i class="fa-solid fa-caret-down"></i><h3>& Orders</h3></div>
+        <div class="cart">
+            <img src="data:image/png;base64,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"><span>Cart</span>
+        </div>
+    </header>
+    <!-- <header>
+        <div class="logo"></div>
+        <div class="location">
+            <h3>Hello</h3>
+            <i class="fa-solid fa-location-dot"></i> Select your location
+        </div> 
+            <div class="search">
+                <div class="search1">
+                    <select>
+                        <option>All</option>
+                    </select>
+                </div>
+                <div class="search2"><input type="text" name="search" placeholder="Search Here ........."></div>
+                <div class="search3"><i class="fa-solid fa-magnifying-glass"></i></div>
+           </div>
+        <div class="lang">
+            <div class="lang1"><img width="48" height="48" src="https://img.icons8.com/color/48/india.png" alt="india"/></div>
+            <div class="lang2">
+                <select>
+                    <option>Eng</option>
+                </select>
+            </div>
+        </div>
+        <div class="signin"><a href="#" target="_parent">Sign in</a><h3>Account & lists</h3></div>
+        <div class="order">
+            Returns<i class="fa-solid fa-caret-down"></i><h3>& Orders</h3>
+        </div>
+        <div class="cart"><img src="data:image/png;base64,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">Cart</div>
+    </header>
+
+
+
+     ------------------------------------------------------ choose ------------------------------------------ -->
+<!-- 
+    <div class="head">
+        <div class="all"><i class="fa-solid fa-bars"></i><a href="#" target="parent">All</a></div>
+    </div> -->
+
+    <div class="head">
+            <div class="all"><i class="fa-solid fa-bars"></i><a href="#">All</a></div>
+            <div class="all"><i class="fa-solid fa-tv"></i><a href="#">Amazon mini Tv</a></div>
+            <div class="all"><a href="#">Sell</a></div>
+            <div class="all"><a href="#">Best Sellers</a></div>
+            <div class="all"><a href="#">Today's Deals</a></div>
+            <div class="all"><a href="#">Mobiles</a></div>
+            <div class="all"><a href="#">New Releases</a></div>
+            <div class="all"><a href="#">Customer Service</a></div>
+            <div class="all"><a href="#">Prime</a></div>
+            <div class="all"><a Href="#">Electronics</a></div>
+            <div class="all"><a href="#">Home&kitchen</a></div>
+            <div class="all"><a href="#">Fashion</a></div>
+            <div class="app">
+                <div class="app1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC0ElEQVR4nO2Y3UsUURjG56a67z9YvzbdVbPWtsRai6zUSg3RPsg00dTOsQ8LCYSgDyTE3M1FyXPszhsj7KJWRDNQ59BFd9lVUP0LaZfGE2fW3RYy2Zmd2U04DzywF7Nznt+87zsDr6YpKSkpbQuJF9cLBachwemKzshPwSliXpq4Ae01THmR34z/X3rjniuC0aDOe7y2BY+E6C6dk1Gdk1+JB9oNIBLN6LrgJLwydX9nyuEFIwv/PMgpAB73u5QgdEbHkjhkS4DdEeDQIlCx/MdnIl+TCQ+jtTgdsdzzW7VNsgAHUwgvNtppabzbYx4gOrBIFSCwlBB+5ru58DxehaemAXRGPtsJYDW8MKpAPlmpwJpdACmF5wbAqhUAU4d4Xn7bFKD+7ZfUwvOoHQdw2poC4KoCUC1kRpluGaGGmKfv6b4f68btyycQ8Bcj350Lb34ezleX2fca7blUiQddZ7Ew2uUIwJvhdvD+C5gaaMH0YBuu1B5BkcdtH4DOKB6TWvhLPLh4uhxDt85hPtxpG8D0YBvutpxCma/Q+N3XWoW64377P2Sy1P3tNfDv8yInOws1R0vR23wSY/eaMDtyLamwy4zg1ZNWDNA6XK0PGKFdLheqK3yYfNhsXFNT4cNwb4NzX2IZItzXiPpKP3Jzso0A0oUFbpSXFhlhmqrKjD6OWYY6fKAI7ryc+PX+Eg86G49h8lE0uPRMqANVgf1YHifOASR6LtyJ4J0GI4gM6SsuMAYxFlI6K8uFvd49xpDKFpRVlP0uNrlfJNiO2Wd/V9MxgHRZUwBcVQCqhcxo+w8xI6uZDi02rDPyw9G1iuNmVtYqjAb/owoMma8A7/FGt8SZfvp0/cMELTANYFSBk3DGATgNaVYlV9uCkfnMtQ6d+/i8Y4dlgBiEXHGntZ2YcVYo5fCJkituuSWWbwQze1MTXpP3lgNrueeVlJSUtHTrN46md63ckL62AAAAAElFTkSuQmCC"></div>
+                <div class="app2"><a href="#">Shopping made easy | Download the app</a></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -----------------------------------------------------background------------------------------------------ -->
+    <div class="background">
+        <div class="content">You are on amazon.com.You can also shop on amazon india for millions of products width fast local delivery. <a href="#">click here to go to amazon.in</a></div>
+    </div>
+
+
+
+    <!-- ------------------------------------------------shopping items-------------------------------------------- -->
+    <div class="shopitems">
+        <div class="items">
+            <h1>Bluetooth calling smartwatch Starts at &#8377;1999</h1>
+            <div class="smart">
+                <img src="watch.jpg" alt="smartwatch"/>
+            </div>
+            <p><a href="#">Shop Now</a></p>
+        </div>
+        <div class="items">
+            <h1>Up to 70% off|Clearance store</h1>
+            <div class="smart">
+                <img src="laptop.jpg" alt="smartwatch" style="margin-top: 28px;"/>
+            </div>
+            <p><a href="#">See More</a></p>
+        </div>
+        <div class="items">
+            <h1>Up to 50% off|Home Decoration Items</h1>
+            <div class="smart">
+              <div class="images"><a href="#"><img src="bed.jpg" alt="bedsheet"></a><p>Bedsheet,curtains & more</p></div>
+              <div class="images"><a href="#"><img src="home decoration.jpg" alt="home decoration"></a><p>Home Decoration</p></div>
+              <div class="images"><a href="#"><img src="shoe box.jpg" alt="home storage"></a><p>Home Storage </p></div>
+              <div class="images"><a href="#"><img src="lighting.jpg" alt="lighiting decoration"></a><p>Lighiting Solution</p></div>
+            </div>
+            <p><a href="#">Explore more</a></p>
+        </div>
+        <div class="items">
+            <h1>Starting &#8377;99|All Your Home Improvement needs</h1>
+            <div class="smart">
+              <div class="images"><a href="#"><img src="wipes.jpg" alt="wipes"></a><p>Spin mopes, wipes & more</p></div>
+              <div class="images"><a href="#"><img src="bathroom.jpg" alt="Bathroom"></a><p> Bathroom hardware and accessories</p></div>
+              <div class="images"><a href="#"><img src="kitchen.jpg" alt="kitchen"></a><p>Kitchen accessories</p></div>
+              <div class="images"><a href="#"><img src="desk.jpg" alt="desk"></a><p></p>Chairs,Table,desk&more</div>
+            </div>
+            <p><a href="#">Explore more</a></p>
+        </div>
+        <div class="items">
+            <h1>Up to 55% off|Appliances for your home</h1>
+            <div class="smart">
+              <div class="images"><a href="#"><img src="air conditioner.jpg" alt="air conditioner"></a><p>Air conditioner</p></div>
+              <div class="images"><a href="#"><img src="refrigerator.jpg" alt="refrigerator"></a><p>Refrigerator</p></div>
+              <div class="images"><a href="#"><img src="microwave.jpg" alt="microwave own"></a><p>Microwave</p></div>
+              <div class="images"><a href="#"><img src="washing machine.jpg" alt="washing machine"></a><p>Washing machine</p></div>
+            </div>
+            <p><a href="#">Explore more</a></p>
+        </div>
+        <div class="items">
+            <h1>Up to 60% off|Style Yourself</h1>
+            <div class="smart">
+              <div class="images"><a href="#"><img src="jewellery.jpeg" alt="jewellery"></a><p>Jewellery</p></div>
+              <div class="images"><a href="#"><img src="shoes.jpeg" alt="shoes"></a><p>Sport shoes</p></div>
+              <div class="images"><a href="#"><img src="bags.jpeg" alt="bags"></a><p>Bags,wallet&luggage</p></div>
+              <div class="images"><a href="#"><img src="crockery.jpg" alt="crockery"></a><p>Glass jars,casseroles & more</p></div>
+            </div>
+            <p><a href="#">Explore more</a></p>
+        </div>
+        <div class="items">
+            <h1>Discount on Medicines</h1>
+            <div class="smart">
+                <img src="pharmacy.jpg" alt="pharmacy"/>
+            </div>
+            <p><a href="#">Shop Now</a></p>
+        </div>
+        <div class="items">
+            <h1>Offer on Travel Tickets</h1>
+            <div class="smart">
+              <div class="images"><a href="#"><img src="flight.jpg" alt="flight"></a><p>Up to 17% off|Flight tickets</p></div>
+              <div class="images"><a href="#"><img src="train.jpg" alt="train"></a><p>Zero gateway fees on trains</p></div>
+              <div class="images"><a href="#"><img src="bus.jpg" alt="bus"></a><p>Bus ticket booking </p></div>
+              <div class="images"><a href="#"><img src="spin.jpg" alt="spin"></a><p>Spin & Win</p></div>
+            </div>
+            <p><a href="#">Explore more</a></p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-------------------------------------------------------- top deals----------------------------------------- -->
+    <div class="sale">
+        <h1>Top Deals</h1>
+        <div class="row1">
+            <div class="top"><a href="#"><img src="sofa a1.jpg" alt="sofa set"></a></div>
+            <div class="top"><a href="#"><img src="headphone.jpg" alt="headphone"></a></div>
+            <div class="top"><a href="#"><img src="computer.jpg" alt="computer"></a></div>
+            <div class="top"><a href="#"><img src="ipod.jpg" alt="ipod"></a></div>
+            <div class="top"><a href="#"><img src="purifier.jpg" alt="purifier"></a></div>
+            <div class="top"><a href="#"><img src="sofa.jpg" alt="sofa"></a></div>
+            <div class="top"><a href="#"><img src="plants.jpg" alt="plants" style="width: 250px;"></a></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="frame">
+        <iframe width="90%" height="500" src="https://www.youtube.com/embed/znoHWOffnOI?si=R-Fh3w-HU9B4pcNx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- --------------------------------------------------fashion--------------------------------------------- -->
+    <div class="shopitems">
+        <div class="items">
+            <h1>Bluetooth calling smartwatch Starts at &#8377;1999</h1>
+            <div class="smart">
+                <img src="decoration.jpg" alt="Decoration" style="width: 370px; height: 300px;"/>
+            </div>
+            <p><a href="#">Shop Now</a></p>
+        </div>
+        <div class="items">
+            <h1>Up to 70% off|Clearance store</h1>
+            <div class="smart">
+              <div class="images"><a href="#"><img src="clothing.jpg" alt="clothing"></a><p>Outfits for men,women&kids</p></div>
+              <div class="images"><a href="#"><img src="backpacks.jpg" alt="backpacks"></a><p>Tourist things more</p></div>
+              <div class="images"><a href="#"><img src="footwear.jpg" alt="footwear"></a><p>Footwears</p></div>
+              <div class="images"><a href="#"><img src="fashion.jpg" alt="fashion"></a><p>View all</p></div>
+            </div>
+            <p><a href="#">Explore more</a></p>
+        </div>
+        <div class="items">
+            <h1>Up to 70% off|Clearance store</h1>
+            <div class="smart">
+              <div class="images"><a href="#"><img src="fruits.jpg" alt="fruits"></a><p>Fresh Fruits</p></div>
+              <div class="images"><a href="#"><img src="vegetables.jpg" alt="vegetables"></a><p>Fresh Vegetables</p></div>
+              <div class="images"><a href="#"><img src="seasonal vegi.jpg" alt="seasonal vegi"></a><p>Seasonal Vegetables </p></div>
+              <div class="images"><a href="#"><img src="vegies.jpg" alt="vegies"></a><p> View all</p></div>
+            </div>
+            <p><a href="#">Explore more</a></p>
+        </div>
+        <div class="items">
+            <h1>Bluetooth calling smartwatch Starts at &#8377;1999</h1>
+            <div class="smart">
+                <img src="wallhanging.jpg" alt="Wallhanging" style="width: 370px; height: 300px;"/>
+            </div>
+            <p><a href="#">Shop Now</a></p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!------------------------------------------------------- phones --------------------------------------------->
+    <div class="sale">
+        <h1>Populer Deals</h1>
+        <div class="row1">
+            <div class="top"><a href="#"><img src="phone1.jpg" alt="phone1"></a></div>
+            <div class="top"><a href="#"><img src="phone2.jpg" alt="phone2"></a></div>
+            <div class="top"><a href="#"><img src="phone3.jpg" alt="phone3"></a></div>
+            <div class="top"><a href="#"><img src="phone4.jpg" alt="phone4"></a></div>
+            <div class="top"><a href="#"><img src="phone5.jpg" alt="phone5"></a></div>
+            <div class="top"><a href="#"><img src="camera.jpg" alt="Camera"></a></div>
+            <div class="top"><a href="#"><img src="computer1.jpg" alt="computer"></a></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- ----------------------------------------------back to top--------------------------------------------- -->
+    <footer>
+       <a href="#"><div class="footer1"><h3>Back to top</h3></div></a> 
+       <div class="footer2">
+            <div class="reference">
+                <h3>Get to know us</h3>
+                <p>About us</p>
+                <p>Careers</p>
+                <p>Press Releases</p>
+                <p>Amazon science</p>
+            </div>
+            <div class="reference">
+                <h3>Connect with us</h3>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+                <p></p>
+            </div>
+            <div class="reference">
+                <h3>Make money With Us</h3>
+                <p>Sell on Amazon</p>
+                <p>Sell Under Amazaon Accelerator</p>
+                <p>Protect and Build Your Brand</p>
+                <p>Amazon Global Selling</p>
+                <p>Beacome an Affilitate</p>
+                <p>Fulfilment by Amazon</p>
+                <p>Advertise Your Product</p>
+                <p>Amazon Pay on Merchants</p>
+            </div>
+            <div class="reference">
+                <h3>Let Us help You</h3>
+                <p>Covid-19 and Amazon</p>
+                <p>Your Account</p>
+                <p>Returns Center</p>
+                <p>100% Purchase protection</p>
+                <p>Amazon App Download</p>
+                <p>Help</p>
+            </div>
+       </div>
+       <hr>
+        <div class="footer3">
+            <img src="amazon logo.png" alt="amazon" style="width: 150px; height: 100px; margin: 50px;"/>
+            <img width="48" height="48" src="https://img.icons8.com/color/48/usa-circular.png" alt="usa-circular"/>
+            <select>
+                <option>Eng</option>
+                <option>Hindi</option>
+                <option>Punjabi</option>
+                <option>Urdu</option>
+                <option>Bengali</option>
+                <option>Marati</option>
+            </select>
+        </div>
+        <hr>
+        <div class="country">
+            <div class="country1">
+                <p>Australia</p>
+                <p>Brazil</p>
+                <p>Canada</p>
+                <p>China</p>
+                <p>France</p>
+                <p>Germany</p>
+                <p>Italy</p>
+                <p>Japan</p>
+                <p>Mexico</p>
+                <p>Netherlands</p>
+                <p>Poland</p>
+                <p>Singapore</p>
+                <p>Spain</p>
+                <p>Turkey</p>
+                <p>United Arab Emirates</p>
+            </div>
+            <div class="country2">
+                <p>United Kingdom</p>
+                <p>United States</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
